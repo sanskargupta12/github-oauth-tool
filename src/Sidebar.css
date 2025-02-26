@@ -1,0 +1,30 @@
+/* src/Sidebar.css */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    height: 100vh; /* Makes sidebar fill the height of the viewport */
+    overflow-y: auto; /* Adds scroll if repository list is long */
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #f0f0f0;
+  }
+  

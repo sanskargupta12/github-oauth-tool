@@ -1,82 +1,70 @@
-# GitHub OAuth Tool
+# Getting Started with Create React App
 
-## Overview
-GitHub OAuth Tool is a web application that allows users to authenticate via GitHub OAuth, view their repositories, and interact with them. The application consists of a **React.js frontend** and a **Node.js backend** using **Express.js and Passport.js** for authentication.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-## Setup and Usage Instructions
+In the project directory, you can run:
 
-### 1. Clone the Repository  
-```bash
-git clone https://github.com/yourusername/github-oauth-tool.git
-cd github-oauth-tool
-```
-### Backend Setup  
-### 2. Navigate to the backend folder  
-```bash
-cd backend
-npm install
-```
-# Environment Setup
+### `npm start`
 
-## 3. Create a .env File
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-```plaintext
-GITHUB_CLIENT_ID=your_client_id
-GITHUB_CLIENT_SECRET=your_client_secret
-FRONTEND_URL=http://localhost:3000
-SESSION_SECRET=your_secret_key
-```
-### 4. Starting the Backend Server
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-```bash
-node index.js
-```
-### 5. Frontend Setup
-```bash
-cd ../frontend
-npm install
-npm start
-```
+### `npm test`
 
-# Usage
-1. Open [http://localhost:3000](http://localhost:3000) in your browser.
-2. Click **Login with GitHub**.
-3. Authenticate via GitHub.
-4. View repositories in the sidebar.
-5. Select a repository to view its details.
-6. Logout using the logout button.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-# Tech Choices & Architecture Decisions
+### `npm run build`
 
-## Frontend
-- **React.js** for UI
-- State Management using `useState` and `useEffect`
-- Fetch API for API requests
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Backend
-- **Node.js** & **Express.js** for REST API
-- **Passport.js** for GitHub OAuth
-- Session-based authentication for persistent login
-- CORS enabled to allow frontend-backend communication
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-# Challenges Faced & Solutions
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## OAuth Authentication Handling
-- **Issue:** Authentication state was lost after page refresh.
-- **Solution:** Used session-based authentication and `credentials: 'include'` in fetch requests.
+### `npm run eject`
 
-## Logout Not Working Properly
-- **Issue:** `req.logout()` required a callback.
-- **Solution:** Implemented the correct logout method in `githubRoutes.js`.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## Repository Fetching & Sidebar Update
-- **Issue:** Sidebar was not updating after login.
-- **Solution:** Used `useEffect` to fetch repositories once the user is authenticated.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-# Future Enhancements
-- Add Pagination for repositories
-- Improve UI/UX with better design
-- Enhance Authentication Security
-- Integrate Pull Requests and Issues
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
