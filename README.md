@@ -1,4 +1,4 @@
-# GitHub OAuth 
+# GitHub OAuth T
 
 ## Overview
 GitHub OAuth Tool is a web application that allows users to authenticate via GitHub OAuth, view their repositories, and interact with them. The application consists of a **React.js frontend** and a **Node.js backend** using **Express.js and Passport.js** for authentication.
